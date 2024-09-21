@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Party</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: url('BackgroundIMage.jpeg') no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5% 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeIn 1s forwards;
+            animation-delay: 2s; /* Delay before content appears */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            animation: logoAnimation 1s forwards; /* Logo animation */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7); /* Increased shadow */
+        }
+
+        @keyframes logoAnimation {
+            0% {
+                transform: scale(1.5) translateY(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1) translateY(-50px); /* Float to position */
+            }
+        }
+
+        .header {
+            background: rgba(0, 0, 0, 0.7); /* Translucent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Increased shadow */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #00d9ff;
+            text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff;
+        }
+
+        .nickname, .realname {
+            text-shadow: 0 0 10px rgba(255, 204, 0, 1), 0 0 20px rgba(255, 204, 0, 0.7);
+        }
+
+        .nickname {
+            font-size: 2rem;
+            color: #ffcc00;
+        }
+
+        .realname {
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+
+        .invite-section, .scroll-down {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Translucent background */
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Increased shadow */
+            margin-bottom: 20px; /* Space between sections */
+        }
+
+        .invite-section img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .scroll-down {
+            text-align: left;
+        }
+
+        .hr {
+            border: none;
+            height: 2px;
+            background-color: #00d9ff;
+            margin: 20px 0;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .nickname {
+                font-size: 1.5rem;
+            }
+            .realname {
+                font-size: 1.2rem;
+            }
+        }
+        .futuristic-button {
+        display: inline-block;
+        padding: 15px 30px;
+        margin-top: 20px;
+        background: rgba(0, 221, 255, 0.8);
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        transition: background 0.3s, transform 0.3s;
+}
+
+    .futuristic-button:hover {
+        background: rgba(0, 191, 255, 1);
+        transform: translateY(-3px);
+    }
+    img {
+            max-width: 100%; /* Ensures the image never exceeds its container's width */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: 10px; /* Gives the image rounded corners */
+            padding: 10px; /* Adds space around the image */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adds a shadow for a "floating" effect */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="ThePartyLogo.png" alt="Party Logo" width="300">
+        <div class="header">
+            <h1>Welcome!</h1>
+        </div>
+        <div>
+            <p class="nickname">Kyona</p>
+            <p class="realname">@Kiona Keswani</p>
+            <img src="kyona.jpeg" alt="Describing Item Image">
+        </div>
+        
+        <div class="invite-section">
+            <h2>You are invited to:</h2>
+            <h3>AryaTac's Birthday</h3>
+            <p>Here's the venue: [Check back for the details.]</p>
+        </div>
+        <hr class="hr">
+        <div class="scroll-down">
+            <h2>Here's the Invitees:</h2>
+            <h3>👑AryaTac👑 @Arya Ghate<br>
+                🏍️Adi @Aditri Bagde<br>
+                👴Stalin @Arjun Chand<br>
+                💵Kyona @Kiona Keswani<br>
+                😎Inevitable @Neil Dzsoua<br>
+                🚗Kia Seltos @Kian<br>
+                🐹Hammy @Soham Bansal<br>
+                🥪Sandwich @Sanvid Korane<br>
+                🥷HinRo @Rohin Sasture<br>
+                📔Kaustubh @Kaustubh<br>
+                😾UltraInstinct @Anay<br>
+            </h3>
+        </div>
+        <a href="Graphic.mp4" class="futuristic-button" target="_blank">:View the Graphic:</a>
+
+
+    </div>
+</body>
+</html>
